@@ -63,14 +63,14 @@ export default function ProductCard({ product, onToggleLike, onAddToCart, onSele
       <div className="pt-3 pb-2 px-1 flex flex-col flex-1 justify-between">
         <div>
           {/* Brand Name */}
-          <span className="text-xs font-medium text-slate-400 block line-clamp-1">
+          <span className="text-xs font-normal text-[#636366] block line-clamp-1">
             {product.brand || product.category}
           </span>
 
           {/* Product Title (Clickable) */}
           <h3
             onClick={() => onSelectProduct?.(product)}
-            className="font-semibold text-slate-900 text-sm sm:text-base line-clamp-1 mt-0.5 group-hover:text-indigo-600 transition-colors cursor-pointer"
+            className="font-normal text-[#636366] text-sm sm:text-base line-clamp-1 mt-0.5 hover:text-slate-900 transition-colors cursor-pointer"
           >
             {product.title}
           </h3>

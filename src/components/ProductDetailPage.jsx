@@ -149,11 +149,11 @@ export default function ProductDetailPage({
         <div className="space-y-6">
           {/* Brand, Title & Price */}
           <div>
-            <span className="text-xs font-bold uppercase tracking-wider text-slate-400">
+            <span className="text-xs font-normal uppercase tracking-wider text-[#636366]">
               {product.brand || product.category}
             </span>
             <div className="flex items-start justify-between gap-4 mt-1">
-              <h1 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h1 className="text-2xl sm:text-3xl font-normal text-[#636366] tracking-tight">
                 {product.title}
               </h1>
               <div className="text-right flex items-baseline gap-2">

@@ -326,12 +326,12 @@ export default function CartPage({
 
                       {/* Item Details */}
                       <div className="flex-1 min-w-0 pr-8">
-                        <span className="text-xs font-semibold text-slate-400 block truncate">
+                        <span className="text-xs font-normal text-[#636366] block truncate">
                           {item.product.brand || item.product.category}
                         </span>
                         <h3
                           onClick={() => onSelectProduct?.(item.product)}
-                          className="text-base sm:text-lg font-bold text-slate-900 truncate hover:text-indigo-600 cursor-pointer transition-colors mt-0.5"
+                          className="text-base sm:text-lg font-normal text-[#636366] truncate hover:text-slate-900 cursor-pointer transition-colors mt-0.5"
                         >
                           {item.product.title}
                         </h3>
@@ -706,7 +706,7 @@ export default function CartPage({
                         {cart.map((item) => (
                           <p
                             key={item.product.id}
-                            className="text-sm text-slate-500 leading-relaxed truncate"
+                            className="text-sm text-[#636366] font-normal leading-relaxed truncate"
                           >
                             {item.quantity} x {item.product.title}
                           </p>
