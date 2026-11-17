@@ -259,7 +259,7 @@ export default function CartPage({
         <div className="flex flex-col items-center justify-center py-12 sm:py-20 text-center px-4 animate-fade-in">
           <div className="w-56 sm:w-64 aspect-square mb-6 flex items-center justify-center">
             <img
-              src="/images/empty-cart.png"
+              src="/images/checkout.png"
               alt="Cart is empty"
               className="w-full h-full object-contain drop-shadow-sm select-none"
             />
@@ -284,7 +284,7 @@ export default function CartPage({
             <div className="space-y-6 animate-fade-in">
               {/* Expected Delivery Banner */}
               {showDeliveryBanner && (
-                <div className="bg-[#F8F7FF] border border-[#E9E5FF] rounded-2xl p-4 flex items-center justify-between gap-3 text-slate-800 animate-fade-in shadow-sm">
+                <div className="bg-[#F8F7FF] border border-slate-900 rounded-2xl p-4 flex items-center justify-between gap-3 text-slate-800 animate-fade-in shadow-sm">
                   <div className="flex items-center gap-3">
                     <div className="w-9 h-9 rounded-full bg-[#EDE9FE] flex items-center justify-center text-[#6D28D9] shrink-0">
                       <Truck className="w-5 h-5" />
@@ -467,9 +467,7 @@ export default function CartPage({
                     }}
                     className="p-6 sm:p-7 flex items-start gap-5 hover:bg-slate-50/70 transition-colors cursor-pointer group"
                   >
-                    <div className="w-10 h-10 rounded-xl bg-slate-100 flex items-center justify-center text-slate-800 shrink-0 mt-0.5 group-hover:bg-slate-200 transition-colors">
-                      <Truck className="w-5 h-5 stroke-[1.75]" />
-                    </div>
+                    <Truck className="w-6 h-6 stroke-[1.75] text-slate-800 shrink-0 mt-0.5" />
 
                     <div className="flex-1 min-w-0">
                       <span className="text-sm font-bold text-slate-900 block tracking-tight">
@@ -502,9 +500,7 @@ export default function CartPage({
                     }}
                     className="p-6 sm:p-7 flex items-start gap-5 hover:bg-slate-50/70 transition-colors cursor-pointer group"
                   >
-                    <div className="w-10 h-10 rounded-xl bg-slate-100 flex items-center justify-center text-slate-800 shrink-0 mt-0.5 group-hover:bg-slate-200 transition-colors">
-                      <Mail className="w-5 h-5 stroke-[1.75]" />
-                    </div>
+                    <Mail className="w-6 h-6 stroke-[1.75] text-slate-800 shrink-0 mt-0.5" />
 
                     <div className="flex-1 min-w-0">
                       <span className="text-sm font-bold text-slate-900 block tracking-tight">
@@ -700,9 +696,7 @@ export default function CartPage({
                     onClick={() => setCurrentStep(1)}
                     className="p-6 sm:p-7 flex items-start gap-5 hover:bg-slate-50/70 transition-colors cursor-pointer group"
                   >
-                    <div className="w-10 h-10 rounded-xl bg-slate-100 flex items-center justify-center text-slate-800 shrink-0 mt-0.5 group-hover:bg-slate-200 transition-colors">
-                      <Package className="w-5 h-5 stroke-[1.75]" />
-                    </div>
+                    <Package className="w-6 h-6 stroke-[1.75] text-slate-800 shrink-0 mt-0.5" />
 
                     <div className="flex-1 min-w-0">
                       <span className="text-sm font-bold text-slate-900 block tracking-tight">
@@ -730,9 +724,7 @@ export default function CartPage({
                     onClick={() => setCurrentStep(2)}
                     className="p-6 sm:p-7 flex items-start gap-5 hover:bg-slate-50/70 transition-colors cursor-pointer group"
                   >
-                    <div className="w-10 h-10 rounded-xl bg-slate-100 flex items-center justify-center text-slate-800 shrink-0 mt-0.5 group-hover:bg-slate-200 transition-colors">
-                      <Truck className="w-5 h-5 stroke-[1.75]" />
-                    </div>
+                    <Truck className="w-6 h-6 stroke-[1.75] text-slate-800 shrink-0 mt-0.5" />
 
                     <div className="flex-1 min-w-0">
                       <span className="text-sm font-bold text-slate-900 block tracking-tight">
@@ -762,9 +754,7 @@ export default function CartPage({
                     onClick={() => setCurrentStep(3)}
                     className="p-6 sm:p-7 flex items-start gap-5 hover:bg-slate-50/70 transition-colors cursor-pointer group"
                   >
-                    <div className="w-10 h-10 rounded-xl bg-slate-100 flex items-center justify-center text-slate-800 shrink-0 mt-0.5 group-hover:bg-slate-200 transition-colors">
-                      <CreditCard className="w-5 h-5 stroke-[1.75]" />
-                    </div>
+                    <CreditCard className="w-6 h-6 stroke-[1.75] text-slate-800 shrink-0 mt-0.5" />
 
                     <div className="flex-1 min-w-0">
                       <span className="text-sm font-bold text-slate-900 block tracking-tight">
